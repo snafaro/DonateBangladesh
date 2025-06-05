@@ -28,7 +28,7 @@ function clickEvent (id) {
     }
     
 })
-}
+};
 
 clickEvent("donate-noakhali");
 clickEvent("donate-feni");
@@ -50,5 +50,8 @@ document.getElementById('donate-btn').addEventListener('click', e=>{
     document.getElementById('donate-card-container').classList.remove('hidden');
     document.getElementById('history-card-container').classList.remove('flex');
     
-})
+});
 
+document.getElementById('blog-btn').addEventListener('click', e=>{
+    window.location.href = "/blog.html";
+});
