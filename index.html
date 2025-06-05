@@ -25,12 +25,12 @@
 
     <!-- donate && history section start -->
     <div class="flex justify-center items-start gap-6 mt-12">
-        <button class="btn bg-[#B4F461] font-semibold text-black text-xl px-8 ">Donate</button>
-        <button class="btn  font-semibold text-black text-xl px-8 ">History</button>
+        <button id="donate-btn" class="btn bg-[#B4F461] font-semibold text-black text-xl px-8 ">Donate</button>
+        <button id="history-btn" class="btn  font-semibold text-black text-xl px-8 ">History</button>
     </div>
 
      <!-- donate card section start -->
-    <div id="card-container" class="px-20 mt-10 flex flex-col gap-9">
+    <div id="donate-card-container" class="px-20 mt-10 flex flex-col gap-9">
         <!-- card one -->
         <div class="card items-center gap-9 lg:card-side bg-base-100 p-8 border border-[#c2c2c2]">    
             <img src="img/feni.png" alt="Album" />
@@ -54,7 +54,7 @@
             </div>
         </div>
         <!-- card three -->
-        <div class="card items-center gap-9 lg:card-side bg-base-100 p-8 border border-[#c2c2c2]">    
+        <div class="card items-center gap-9 lg:card-side bg-base-100 p-8 border border-[#c2c2c2] ">    
             <img src="img/quota-protest.png" alt="Album" />
             <div class="flex flex-col gap-4">
                 <button class="btn "><img src="img/coin.png" alt=""><span>500</span></button>
@@ -66,7 +66,27 @@
         </div>
     </div>
      <!-- donate card section end -->
+
+     <!-- history card section start  -->
+    <div id="history-card-container" class="flex-col gap-6 justify-center items-center hidden">
+
+    </div>
+     <!-- history card section end  -->
     <!-- donate && history section end -->
+     <!-- modal start -->
+    <dialog id="my_modal_4" class="modal">
+        <div class="modal-box w-11/12 max-w-5xl">
+            <h3 class="text-lg font-bold">Hello!</h3>
+            <p class="py-4">Click the button below to close</p>
+            <div class="modal-action">
+            <form method="dialog">
+                <!-- if there is a button, it will close the modal -->
+                <button class="btn">Close</button>
+            </form>
+            </div>
+        </div>
+    </dialog>
+    <!-- modal end -->
 
 
     <script src="/js/index.js"></script>
